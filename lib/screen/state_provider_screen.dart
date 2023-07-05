@@ -29,7 +29,7 @@ class StateProviderScreen extends ConsumerWidget {
             ElevatedButton(
               onPressed: () {
                 ref.read(numberProvider.notifier).state =
-                    ref.read(numberProvider.notifier).state - 1; //
+                    ref.read(numberProvider.notifier).state - 1; //불러와서 저장
               },
               child: Text('down'),
             ),

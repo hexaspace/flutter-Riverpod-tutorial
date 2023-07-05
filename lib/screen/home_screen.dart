@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod_tutorial/layout/default_layout.dart';
+import 'package:flutter_riverpod_tutorial/screen/state_notifier_provider_screen.dart';
 import 'package:flutter_riverpod_tutorial/screen/state_provider_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -18,7 +19,16 @@ class HomeScreen extends StatelessWidget {
                 ),
               );
             },
-            child: Text('state provider screen'))
+            child: Text('state provider screen')),
+        ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => StateNotifierProviderScreen(),
+                ),
+              );
+            },
+            child: Text('StateNotifierProviderScreen'))
       ]),
     );
   }
