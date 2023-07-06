@@ -23,7 +23,7 @@ class _ListenProviderScreenState extends ConsumerState<ListenProviderScreen>
     controller = TabController(
       length: 10,
       vsync: this,
-      initialIndex: ref.read(listenProvider),
+      initialIndex: ref.read(listenProvider), // init안에서 watch 쓰면 절대 안됨
     );
   }
 
