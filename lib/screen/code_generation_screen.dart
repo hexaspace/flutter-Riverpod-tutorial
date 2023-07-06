@@ -19,7 +19,7 @@ class CodeGenerationScreen extends ConsumerWidget {
         title: "CodeGenerationScreen",
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+          // crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(state1),
             state2.when(

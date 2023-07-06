@@ -52,3 +52,21 @@ int gStateMultiply(
 }) {
   return number1 * number2;
 }
+
+// state notifier provider genertaion 하기
+@riverpod
+class GStateNotifier extends _$GStateNotifier {
+  // build에 초기값을 넣어야한다.
+  @override
+  int build() {
+    return 0;
+  }
+
+  increment() {
+    state++;
+  }
+
+  decrement() {
+    state--;
+  }
+}
