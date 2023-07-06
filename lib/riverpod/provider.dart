@@ -6,13 +6,14 @@ final filteredShoppingListProvider = Provider(
     final filterState = ref.watch(filterProvider);
     final shoppingListState = ref.watch(shoppingListProvider);
 
-    if (filterState == FilterState.notSpicy) {
-      return shoppingListState.where((element) => !element.isSpicy).toList();
-    } else if (filterState == FilterState.isSpicy) {
-      return shoppingListState.where((element) => element.isSpicy).toList();
-    } else if (filterState == FilterState.all) {
-      return shoppingListState;
-    }
+    // if (filterState == FilterState.notSpicy) {
+    //   return shoppingListState.where((element) => !element.isSpicy).toList();
+    // } else if (filterState == FilterState.isSpicy) {
+    //   return shoppingListState.where((element) => element.isSpicy).toList();
+    // } else if (filterState == FilterState.all) {
+    //   return shoppingListState;
+    // }
+    return shoppingListState;
   },
 );
 
