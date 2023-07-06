@@ -68,6 +68,8 @@ class CodeGenerationScreen extends ConsumerWidget {
                   ],
                 );
               },
+              // child는 위에 build가 재 랜더링되어도, 초기 한번만불러오도록 할수있다.
+              // 복잡하고 cost가 많이 필요한 위젯
               child: Text("hello"),
             ),
             ElevatedButton(
