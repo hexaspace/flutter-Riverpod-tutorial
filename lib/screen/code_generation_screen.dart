@@ -11,6 +11,10 @@ class CodeGenerationScreen extends ConsumerWidget {
     final state1 = ref.watch(gStateProvider);
     final state2 = ref.watch(gStateFutureProvider);
     final state3 = ref.watch(gStateFuture2Provider);
+    final state4 = ref.watch(gStateMultiplyProvider(
+      number1: 10,
+      number2: 20,
+    ));
     return DefaultLayout(
         title: "CodeGenerationScreen",
         body: Column(
@@ -52,6 +56,7 @@ class CodeGenerationScreen extends ConsumerWidget {
                 child: CircularProgressIndicator(),
               ), // 로딩중 함수
             ),
+            Text(state4.toString()),
           ],
         ));
   }
