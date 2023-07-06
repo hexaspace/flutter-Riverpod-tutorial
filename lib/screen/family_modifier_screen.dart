@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_riverpod_tutorial/layout/default_layout.dart';
-import 'package:flutter_riverpod_tutorial/riverpod/familu_modifier_provider.dart';
+import 'package:flutter_riverpod_tutorial/riverpod/family_modifier_provider.dart';
 
 class FamilyModifierScreen extends ConsumerWidget {
   const FamilyModifierScreen({super.key});
